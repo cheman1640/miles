@@ -54,7 +54,7 @@
     <tr><td>Usage</td><td>Events like starting or ending a class, opening or exporting your notes, asking
       a question, or how many times you tried to open a locked app during class (a count, never which app),
       with the time they happened. Also your answers to the occasional one-tap question in the app. We use
-      them to improve Miles, not for advertising.</td></tr>
+      them to improve Miles. A few of them also go to Meta to measure our ads (see "Ads we run").</td></tr>
     <tr><td>Subscription</td><td>Your purchase and subscription status, from Apple, through RevenueCat. We
       never see your payment details.</td></tr>
   </table>
@@ -69,7 +69,7 @@
   </ul>
 
   <h2>Who helps us</h2>
-  <p>These providers process data only to run Miles for you:</p>
+  <p>These providers help us run Miles:</p>
   <ul>
     <li><strong>Supabase</strong> stores your data and runs our servers.</li>
     <li><strong>OpenAI</strong> writes your notes and answers your questions to Miles.</li>
@@ -78,12 +78,23 @@
     <li><strong>Anthropic</strong> (Claude) reads schedule photos, and writes notes and answers when OpenAI
       is unavailable.</li>
     <li><strong>PostHog</strong> stores usage events for our product analytics, without your location.</li>
+    <li><strong>Meta</strong> measures which of our Instagram and Facebook ads bring people to Miles.</li>
     <li><strong>RevenueCat</strong> and <strong>Apple</strong> handle subscriptions.</li>
     <li><strong>Expo</strong> delivers app updates.</li>
   </ul>
   <p>Under their terms for developers, OpenAI and Anthropic don't train their models on the data we send them,
-  and Groq doesn't store it.
-  We don't sell your data, share it with advertisers, or track you across other apps and websites.</p>
+  and Groq doesn't store it. We don't sell your data.</p>
+
+  <h2>Ads we run</h2>
+  <p>We advertise Miles on Instagram and Facebook, and use Meta's SDK to learn which ads work. It tells Meta
+  when the app is installed and opened, when you finish the first questions, and when you start a trial or a
+  subscription, along with the anonymous ID, your device model and iOS version, and your IP address. Never your
+  notes, your classes or what you ask Miles.</p>
+  <p>After you subscribe, iOS asks whether Miles may track you. If you allow it, Meta also gets your device's
+  advertising identifier and can match these events with your activity on Meta to measure our ads. If you ask
+  Miles not to track, Meta doesn't get that identifier and uses the events only for aggregated ad
+  measurement. You can change your answer anytime
+  in Settings › Privacy &amp; Security › Tracking.</p>
 
   <h2>How long we keep it</h2>
   <p>We keep your transcripts, notes, schedule and answers while you use Miles, so your notes are
